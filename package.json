@@ -1,14 +1,19 @@
 {
-  "name": "visa-sjis",
-  "version": "0.1.0",
+  "name": "visa-sijs",
+  "version": "1.0.0",
+  "description": "SIJS Special Immigrant Juvenile Status — Information and Resources for 2026",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext ts,tsx --fix",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.6.1",
+    "lucide-react": "^0.563.0",
     "next": "16.1.6",
     "react": "19.2.3",
     "react-dom": "19.2.3"
@@ -22,5 +27,23 @@
     "eslint-config-next": "16.1.6",
     "tailwindcss": "^4",
     "typescript": "^5"
-  }
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "SIJS",
+    "special-immigrant-juvenile",
+    "immigration",
+    "I-360",
+    "EB-4",
+    "green-card",
+    "deferred-action",
+    "work-permit",
+    "juvenile-court"
+  ],
+  "author": "VISA-SIJS.com",
+  "license": "UNLICENSED",
+  "homepage": "https://visa-sijs.com"
 }
